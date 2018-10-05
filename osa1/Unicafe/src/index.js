@@ -12,7 +12,7 @@ class App extends React.Component {
     }
   }
 
-  addHyva = () => { //addHyva on ikäänkuin kenttä. Nuolifunktion this määräytyy sen määrittely komponentin mukaan
+  addHyva = () => {
     this.setState({
       hyva: this.state.hyva + 1,
       maara: this.state.maara + 1
