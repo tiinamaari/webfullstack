@@ -110,7 +110,7 @@ class App extends React.Component {
     const personsToShow =
       this.state.filter === '' ?
         this.state.persons :
-        this.state.persons.filter(person => (person.name.indexOf(this.state.filter) > -1))
+        this.state.persons.filter(person => (person.name.toLowerCase().indexOf(this.state.filter.toLowerCase()) > -1))
     return (
       <div>
         <h2>Puhelinluettelo</h2>
